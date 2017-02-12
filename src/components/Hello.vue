@@ -10,13 +10,12 @@ var data={}
 export default {
     data(){return data},
     methods:{
+        test:function() {
+            this.$http.get('/').then(res => {
+                console.log(res.body);
 
-    test:function() {
-        this.$http.get('/').then(res => {
-            console.log(res.body);
-
-        });
-    }
+            });
+        }
     }
 }
 </script>
