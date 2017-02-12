@@ -21,13 +21,15 @@
 <script>
     var data={
         login: 'aaa',
-        pass: '',
-        doLogin () {
-          console.log(data.login);
-        }
+        pass: ''
      };
     export default {
     data(){ return data }
+    ,methods:{
+        doLogin () {
+          console.log(data.login);
+        }
+    }
 }
 </script>
 <style scoped="">
